@@ -77,7 +77,7 @@ window.BRAND_DATA = {
       "project": "What Else? – Ambassador Campaign",
       "language": "EN",
       "category": "Online / Digital Ad",
-      "description": "Sophisticated narration for Nespresso brand film. Directed by Arcane Productions, Vevey.",
+      "description": "Sophisticated narration for Nespresso brand film. Directed by Hana Road Studios, Montreux.",
       "duration": "45"
     }
   ],
