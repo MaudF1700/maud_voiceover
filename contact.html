@@ -91,14 +91,8 @@
       <div class="fade-in">
         <h2 data-i18n="contact.form.h2" class="font-display text-3xl text-charcoal mb-8">Send a message</h2>
 
-        <!-- =========================================================
-             FORMSPREE FORM:
-             1. Create a free account at https://formspree.io
-             2. Create a new form linked to your email address
-             3. Replace YOUR_FORM_ID_HERE with the ID Formspree gives you
-                Example: https://formspree.io/f/xpzgkrjq
-             ========================================================= -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="space-y-6">
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+          <input type="hidden" name="access_key" value="1ec28883-8ed4-4fb2-b97b-a1af1782e2eb">
 
           <!-- Name -->
           <div>
@@ -163,8 +157,9 @@
             ></textarea>
           </div>
 
-          <!-- Hidden field to prevent spam -->
-          <input type="text" name="_gotcha" class="hidden" aria-hidden="true">
+          <!-- Honeypot spam protection -->
+          <input type="checkbox" name="botcheck" class="hidden" aria-hidden="true">
+          <input type="hidden" name="subject" value="New voiceover enquiry from maudfasel.ch">
 
           <button type="submit"
             class="w-full bg-gold hover:bg-gold-dk text-white font-body font-semibold text-sm tracking-wide py-4 transition-colors duration-200">
